@@ -1,4 +1,4 @@
-const host = `http://localhost/codehams`;
+const host = `https://https://migham.github.io`;
 const linkCabecera = `${host}/mh/cabecera.html`;
 const linkNoticias = `${host}/mh/noticias.html`;
 const linkInicio = `${host}/mh/inicio.html`;
