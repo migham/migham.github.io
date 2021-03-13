@@ -1,0 +1,346 @@
+@charset "utf-8";
+
+:root{
+	--colorBorder: rgb(0, 125, 180);
+	--colorBgFull: rgba(0, 125, 180, 1);
+}
+
+/*NOTE Estilos base*/
+*{
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+
+body{
+	width                : 100vw;
+	height               : 100vh;
+	display              : grid;
+	grid-template        : "header header header"
+							"noticias main guias"
+							"pie pie pie";
+	grid-template-columns: 2fr 6fr 1.5fr;
+	grid-template-rows   : 0.7fr 8fr 0.5fr;
+	background-color     : rgb(225, 228, 231);
+	color                : rgb(65, 75, 85);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  CABECERA                                  */
+/* -------------------------------------------------------------------------- */
+
+#cabecera{
+	grid-area      : header;
+	display        : flex;
+	justify-content: space-between;
+	align-items    : center;
+	border-bottom  : 2px dashed var(--colorBorder);
+}
+
+#cabecera h1{
+	margin-left: 2em;
+	font-weight: 900;
+}
+
+#cabecera nav ul{
+	display   : flex;
+	list-style: none;
+}
+
+#cabecera nav ul li{
+	width : 120px;
+	margin: 5px;
+}
+
+#cabecera nav ul li a{
+	display        : block;
+	text-align     : center;
+	text-decoration: none;
+	color          : rgb(25, 27, 30);
+	padding        : 6px;
+	background   : linear-gradient(90deg, 
+						rgba(140, 32, 202, 0.0) 0%,	
+						rgba(0, 125, 180, 1) 33%,
+						rgba(0, 125, 180, 1) 66%,
+						rgba(140, 32, 202, 0.0) 100%);
+	background-position: center bottom;
+	background-size    : 0% 3px;
+	background-repeat  : no-repeat;	
+	transition     : all 0.2s ease-in-out;
+}
+
+#cabecera nav ul li a:hover{
+	background-size: 100% 3px;
+}
+
+/*NOTE Noticias*/
+
+/* -------------------------------------------------------------------------- */
+/*                                  NOTICIAS                                  */
+/* -------------------------------------------------------------------------- */
+ #noticias{
+	 grid-area    : noticias;
+	 border-right : 2px dashed var(--colorBorder);
+	 margin       : 5px;
+ }
+
+ #noticias h4{
+	background-color   : linear-gradient(90deg, rgba(140, 32, 202, 0.0) 0%,	
+						var(--colorBgFull) 33%,var(--colorBgFull) 66%,rgba(140, 32, 202, 0.0) 100%);
+	background-position: center bottom;
+	background-size    : 100% 3%;
+	background-repeat  : no-repeat;
+	text-align         : left;
+	padding-left       : 2em;
+	padding-bottom     : 3px;
+}
+
+#noticias a{
+	text-decoration: none;
+}
+
+#noticias ul{
+	padding-left: 25px;
+	margin-right: 5px;
+}
+
+#noticias ul li{
+	border-radius      : 5px;
+	border             : 1px solid transparent;
+	line-height        : 1.5em;
+	background         : linear-gradient(90deg,
+						var(--colorBgFull) 50%,
+						rgba(140, 32, 202, 0.0) 70%);
+	background-position: left bottom;
+	background-size    : 0% 3px;
+	background-repeat  : no-repeat;
+	transition         : 0.4s ease;
+}
+
+ #noticias ul li:hover{
+	background-size: 100% 3px;
+	cursor         : pointer;
+ }
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 NOTE   MAIN                                */
+/* -------------------------------------------------------------------------- */
+
+#main{
+	grid-area : main;
+	overflow: hidden;
+	position: relative;
+}
+
+/* -------------------------------------------------------------------------- */
+/*         Las clases viewport y hideScroll permiten ocultar el scroll        */
+/* -------------------------------------------------------------------------- */
+
+.viewport{
+	overflow-y   : auto;
+	max-height   : 100%;
+	margin-right : -50px;
+	padding-right: 50px;
+}
+
+.hideScroll{
+	height  : 100%;
+	position: relative;
+	padding : 0 5px;
+}
+
+.hideScroll::after{
+	content : '';
+	height  : 2em;
+	position: absolute;
+	bottom  : 0;
+	right   : 0;
+	left    : 0;
+}
+
+article{
+	margin: 5px 10px;
+	padding-top: 20px;
+}
+
+.articulo #hArti{
+	/*
+	background         : linear-gradient(90deg, 
+						rgba(140, 32, 202, 0.0) 0%,	
+						var(--colorBgFull) 33%,
+						var(--colorBgFull) 66%,	
+						rgba(140, 32, 202, 0.0) 100%);
+	background-position: center bottom;
+	background-size    : 100% 3%;
+	background-repeat  : no-repeat;
+	*/
+	text-align         : center;
+	font-size: 2em;
+	padding-bottom: 10px;
+}
+
+p{
+	margin: 10px;
+	margin-bottom: 0.3em;
+	margin-top: 1.2em;
+	line-height: 1.1em;
+	font-size: 1.1em;
+	text-align: justify;
+	text-indent: 1em;
+	font-family: 'Ubuntu Mono', monospace;
+	font-weight: 400;
+}
+span#tag{
+	color: var(--colorBorder);
+	font-size: 1em;
+}
+span#atributo{
+	color:tomato;
+}
+
+h2.titulos{
+	border-bottom: 2px solid var(--colorBorder);
+	padding-bottom: 5px;
+}
+
+a{
+	color: tomato;
+}
+
+hr.fuentes{
+	margin-top: 5em;
+}
+
+footer#pieArt ul{
+	list-style: none;
+}
+
+footer#pieArt ul li::before{
+	content: "\00BB \0020 \0020";
+}
+
+figure#tim{
+	
+	float: right;
+	border: 1px solid black;
+	background-color: rgb(65, 75, 85);
+	color: white;
+	margin: 0 5px 30px 30px;
+}
+img{
+	padding: 5px;
+	padding-bottom: 0;
+}
+figure#tim figcaption{
+	padding: 4px 0;
+	text-align: center;
+}
+
+.puntos{
+	font-weight: 700;
+}
+.itemsLinks{font-weight: 400;}
+.itemsLinks a{text-decoration: none;}
+
+.descrip{
+	font-weight: 400;
+	list-style: none;
+	padding: 0;
+	width: 60%;
+}
+/* -------------------------------------------------------------------------- */
+/*                             GUIAS DEL DOCUMENTO                            */
+/* -------------------------------------------------------------------------- */
+
+#guias{
+	grid-area: guias;
+	border-left: 2px dashed var(--colorBorder);
+}
+
+#guias ul{
+	list-style: none;
+	font-size: 0.8em;
+	padding-left: 20px;
+}
+#guias ul li{
+	padding: 10px 0;
+}
+
+#guias ul li::before{
+	content: "\2666 \0020 \0020 \0020";
+}
+
+#guias ul li a{
+	text-decoration: none;
+}
+
+#pie{
+	grid-area: pie;
+	display: flex;
+	justify-content: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             NOTE Apuntes varios                            */
+/* -------------------------------------------------------------------------- */
+
+.estructura{
+	width: 300px;	
+	border: 1px dashed black;
+	margin: auto;
+	padding: 10px 5px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.estructura>div{
+	text-align: center;
+	padding: 5px;
+	color: white;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+.estructura .tipo{
+	margin-top: 1.5em;
+	border: 2px dashed rgb(27, 145, 106);
+	background: rgb(35, 197, 143);
+}
+
+.estructura .cabeza{
+	border: 2px dashed rgb(27, 60, 145);
+	background: rgb(35, 186, 197);
+	height: 2em;
+}
+
+.estructura .cuerpo{
+	border: 2px dashed rgb(145, 27, 27);
+	background: rgb(197, 35, 35);
+	height: 4em;
+}
+
+/* NOTE ------------------------ Codigo de ejemplos --------------------------- */
+
+.codeEjemplo{
+	width: 90%;
+	margin: auto;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #fafafa;
+	border: 2px dashed grey;
+	font-size: 1em;
+	display: grid;
+	grid-template-columns: 30px 1fr;
+}
+.codeEjemplo .numLinea{
+	border-right: 1px solid var(--colorBorder);
+	margin-left: 0;
+	padding-left: 5px;
+}
+.codeEjemplo .lineaCodigo{
+	padding-left: 10px;
+}
+.codeEjemplo .lineaCodigo.ident_1{
+	padding-left: 25px;
+}
