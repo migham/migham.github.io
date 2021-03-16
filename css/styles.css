@@ -71,3 +71,130 @@
 #cabecera nav ul li a:hover{
 	background-size: 100% 3px;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                 NOTE   MAIN                                */
+/* -------------------------------------------------------------------------- */
+
+#main{
+	grid-area : main;
+	overflow: hidden;
+	position: relative;
+}
+
+/* -------------------------------------------------------------------------- */
+/*         Las clases viewport y hideScroll permiten ocultar el scroll        */
+/* -------------------------------------------------------------------------- */
+
+.viewport{
+	overflow-y   : auto;
+	max-height   : 100%;
+	margin-right : -50px;
+	padding-right: 50px;
+}
+
+.ocultaScroll{
+	height  : 100%;
+	position: relative;
+	padding : 0 5px;
+}
+
+.hideScroll::after{
+	content : '';
+	height  : 2em;
+	position: absolute;
+	bottom  : 0;
+	right   : 0;
+	left    : 0;
+}
+
+article{
+	margin: 5px 10px;
+	padding-top: 20px;
+}
+
+.articulo #hArti{
+	/*
+	background         : linear-gradient(90deg, 
+						rgba(140, 32, 202, 0.0) 0%,	
+						var(--colorBgFull) 33%,
+						var(--colorBgFull) 66%,	
+						rgba(140, 32, 202, 0.0) 100%);
+	background-position: center bottom;
+	background-size    : 100% 3%;
+	background-repeat  : no-repeat;
+	*/
+	text-align         : center;
+	font-size: 2em;
+	padding-bottom: 10px;
+}
+
+p{
+	margin: 10px;
+	margin-bottom: 0.3em;
+	margin-top: 1.2em;
+	line-height: 1.1em;
+	font-size: 1.1em;
+	text-align: justify;
+	text-indent: 1em;
+	font-family: 'Ubuntu Mono', monospace;
+	font-weight: 400;
+}
+span#tag{
+	color: var(--colorBorder);
+	font-size: 1em;
+}
+span#atributo{
+	color:tomato;
+}
+
+h2.titulos{
+	border-bottom: 2px solid var(--colorBorder);
+	padding-bottom: 5px;
+}
+
+a{
+	color: tomato;
+}
+
+hr.fuentes{
+	margin-top: 5em;
+}
+
+footer#pieArt ul{
+	list-style: none;
+}
+
+footer#pieArt ul li::before{
+	content: "\00BB \0020 \0020";
+}
+
+figure#tim{
+	
+	float: right;
+	border: 1px solid black;
+	background-color: rgb(65, 75, 85);
+	color: white;
+	margin: 0 5px 30px 30px;
+}
+img{
+	padding: 5px;
+	padding-bottom: 0;
+}
+figure#tim figcaption{
+	padding: 4px 0;
+	text-align: center;
+}
+
+.puntos{
+	font-weight: 700;
+}
+.itemsLinks{font-weight: 400;}
+.itemsLinks a{text-decoration: none;}
+
+.descrip{
+	font-weight: 400;
+	list-style: none;
+	padding: 0;
+	width: 60%;
+}
