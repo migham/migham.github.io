@@ -1,8 +1,15 @@
-let Cabecera, HeaderURL = `/hm/cabecera.html`;
+let Cabecera, HeaderURL   = `/hm/cabecera.html`;
+let Noticias, NoticiasURL = '/hm/noticias.html';
+let Guias,    GuiasURL    = '/hm/guias.html';
 
 function Main() {
 	Cabecera = document.getElementById('cabecera');
+	Noticias = document.getElementById('noticias');
+	Guias = document.getElementById('guias');
+
 	CargarElemento(Cabecera, HeaderURL);
+	CargarElemento(Noticias, NoticiasURL);
+
 }
 
 window.addEventListener('DOMContentLoad', Main, false);
