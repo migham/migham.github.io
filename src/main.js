@@ -10,7 +10,6 @@ function Main() {
 
 	CargarElemento(Cabecera, HeaderURL);
 	CargarElemento(Noticias, NoticiasURL);
-
 }
 
 window.addEventListener('DOMContentLoad', Main, false);
