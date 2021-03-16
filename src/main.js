@@ -1,6 +1,7 @@
-let Cabecera, HeaderURL   = `/hm/cabecera.html`;
-let Noticias, NoticiasURL = '/hm/noticias.html';
-let Guias,    GuiasURL    = '/hm/guias.html';
+let host = 'https://migham.github.io';
+let Cabecera, HeaderURL   = `${host}/hm/cabecera.html`;
+let Noticias, NoticiasURL = `${host}/hm/noticias.html`;
+let Guias,    GuiasURL    = `${host}/hm/guias.html`;
 
 function Main() {
 	Cabecera = document.getElementById('cabecera');
