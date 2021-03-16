@@ -1,0 +1,12 @@
+
+@charset "utf-8";
+
+:root{
+	--colorBorder: rgb(0, 125, 180);
+	--colorBgFull: rgba(0, 125, 180, 1);
+}
+
+*{
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
