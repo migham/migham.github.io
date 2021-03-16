@@ -12,7 +12,7 @@ function Main() {
 	CargarElemento(Noticias, NoticiasURL);
 }
 
-window.addEventListener('DOMContentLoad', Main, false);
+window.addEventListener('load', Main, false);
 
 /**
  * Funcion que permite agregar elementos al documento
