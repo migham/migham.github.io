@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoad', Main, false);
  * @param {Element} elemento Recibe un elemento del documento
  * @param {String} url Recibe la url del elemento a cargar
  */
-async function CargarElemento(elemento = Element, url = '') {
+async function CargarElemento(elemento, url = '') {
 	const XHR = new XMLHttpRequest();
 	XHR.open('GET', url, true);
 	XHR.onload = () => {
