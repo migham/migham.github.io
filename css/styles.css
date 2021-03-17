@@ -249,3 +249,64 @@ figure#tim figcaption{
 	padding: 0;
 	width: 60%;
 }
+
+
+.estructura{
+	width: 300px;	
+	border: 1px dashed black;
+	margin: auto;
+	padding: 10px 5px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.estructura>div{
+	text-align: center;
+	padding: 5px;
+	color: white;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+.estructura .tipo{
+	margin-top: 1.5em;
+	border: 2px dashed rgb(27, 145, 106);
+	background: rgb(35, 197, 143);
+}
+
+.estructura .cabeza{
+	border: 2px dashed rgb(27, 60, 145);
+	background: rgb(35, 186, 197);
+	height: 2em;
+}
+
+.estructura .cuerpo{
+	border: 2px dashed rgb(145, 27, 27);
+	background: rgb(197, 35, 35);
+	height: 4em;
+}
+
+/* NOTE ------------------------ Codigo de ejemplos --------------------------- */
+
+.codeEjemplo{
+	width: 90%;
+	margin: auto;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #fafafa;
+	border: 2px dashed grey;
+	font-size: 1em;
+	display: grid;
+	grid-template-columns: 30px 1fr;
+}
+.codeEjemplo .numLinea{
+	border-right: 1px solid var(--colorBorder);
+	margin-left: 0;
+	padding-left: 5px;
+}
+.codeEjemplo .lineaCodigo{
+	padding-left: 10px;
+}
+.codeEjemplo .lineaCodigo.ident_1{
+	padding-left: 25px;
+}
