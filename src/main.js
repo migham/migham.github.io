@@ -9,7 +9,6 @@ function Main() {
 	Guias = document.getElementById('guias');
 
 	CargarElemento(Cabecera, HeaderURL);
-	CargarElemento(Noticias, NoticiasURL);
 }
 
 window.addEventListener('load', Main, false);
