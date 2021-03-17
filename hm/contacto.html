@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Codehams - HTML</title>
+
+	<link 
+		rel="stylesheet" 
+		href="/css/norm-min.css">
+	<link 
+		rel="preconnect" 
+		href="https://fonts.gstatic.com">
+	<link 
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap" 
+		rel="stylesheet"> 
+	<link 
+		rel="stylesheet" 
+		href="/css/styles.css">
+</head>
+
+<body id= "cuerpo">
+	<header class="cabecera" id="cabecera"></header>
+	<aside class="noticias" id="noticias"></aside>
+	<aside class="guias" id="guias"><ul id="itemsGuia"></ul></aside>	
+
+	<main class="contacto" id="main">
+		<div class="Viewport">
+			<article class='articulo'>
+				<h1 id="hArt">Contacto</h1>
+				<p>Por cualquier duda o sugerencia, por favor no dudes en escribirme!</p>
+				<form action="" method="post">
+					<label for="Nombre">Nombre:</label>
+					<input type="text" name="nombre" id="nombre" required placeholder="Nombre">
+					<label for="correo">Correo:</label>
+					<input type="email" name="mail" id="mail" placeholder="fulanito@tu-correo.com">
+					<label for="mensaje">Mensaje:</label>
+					<textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+				</form>
+
+				<footer id = "pieArt"></footer>
+			</article>
+		</div>
+	</main>
+
+	<footer class="pie" id="pie"><p>Migham</p></footer>
+
+	<script src="https://migham.github.io/src/main.js"></script>
+</body>
+</html>
