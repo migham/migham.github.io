@@ -144,13 +144,13 @@
 	padding-right: 50px;
 }
 
-main.ocultaScroll{
+.ocultaScroll{
 	height  : 100%;
 	position: relative;
 	padding : 0 5px;
 }
 
-main.ocultaScroll::after{
+.ocultaScroll::after{
 	content : '';
 	height  : 2em;
 	position: absolute;
