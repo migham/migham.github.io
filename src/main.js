@@ -4,6 +4,28 @@ let Noticias, NoticiasURL = `${host}/hm/noticias.html`;
 let Guias,    GuiasURL    = `${host}/hm/guias.html`;
 let MainPrincipal;
 
+let bloqueCodigo = [];
+let numLineaCodigo = [];
+
+const NumerarLineas = () => {
+	setTimeout(() => {
+		/**NOTE Bloques de codigo
+		 * Obtengo todos los bloques de codigo y los recorro con foreach()
+		 * para determinar la cantidad de lineas de codigo en cada bloque
+		 * y poder asignarles un numero
+		*/
+		bloqueCodigo = document.querySelectorAll('.codeEjemplo');
+		bloqueCodigo.forEach((bloque) => {
+			let index = 0;
+			numLineaCodigo = bloque.querySelectorAll('.numLinea');
+			numLineaCodigo.forEach(num => {
+				index++;
+				num.innerHTML = index.toString();
+			});
+		});
+	}, 500);
+};
+
 function Main() {
 	Cabecera = document.getElementById('cabecera');
 	Noticias = document.getElementById('noticias');
@@ -13,6 +35,7 @@ function Main() {
 	if(MainPrincipal.classList.contains('guia-html'))
 	{
 		CargarElemento(Noticias, `${host}/hm/items-html.html`);
+		
 	}
 
 	CargarElemento(Cabecera, HeaderURL);
