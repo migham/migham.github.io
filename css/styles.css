@@ -137,7 +137,7 @@
 /*         Las clases viewport y hideScroll permiten ocultar el scroll        */
 /* -------------------------------------------------------------------------- */
 
-.viewport{
+.Viewport{
 	overflow-y   : auto;
 	max-height   : 100%;
 	margin-right : -50px;
