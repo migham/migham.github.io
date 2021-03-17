@@ -41,6 +41,10 @@
 	font-weight: 900;
 }
 
+#cabecera h1 a{
+	text-decoration: none;
+}
+
 #cabecera nav ul{
 	display   : flex;
 	list-style: none;
