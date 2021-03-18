@@ -15,9 +15,11 @@ const NumerarLineas = () => {
 		 * y poder asignarles un numero
 		*/
 		bloqueCodigo = document.querySelectorAll('.codeEjemplo');
+		console.log(bloqueCodigo);			//Testing
 		bloqueCodigo.forEach((bloque) => {
 			let index = 0;
 			numLineaCodigo = bloque.querySelectorAll('.numLinea');
+			console.log(bloque);			//Testing
 			numLineaCodigo.forEach(num => {
 				index++;
 				num.innerHTML = index;
