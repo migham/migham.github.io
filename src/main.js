@@ -20,10 +20,10 @@ const NumerarLineas = () => {
 			numLineaCodigo = bloque.querySelectorAll('.numLinea');
 			numLineaCodigo.forEach(num => {
 				index++;
-				num.innerHTML = index.toString();
+				num.innerHTML = index;
 			});
 		});
-	}, 500);
+	}, 1000);
 };
 
 function Main() {
