@@ -15,11 +15,9 @@ const NumerarLineas = () => {
 		 * y poder asignarles un numero
 		*/
 		bloqueCodigo = document.querySelectorAll('.codeEjemplo');
-		console.log(bloqueCodigo);			//Testing
 		bloqueCodigo.forEach((bloque) => {
 			let index = 0;
 			numLineaCodigo = bloque.querySelectorAll('.numLinea');
-			console.log(bloque);			//Testing
 			numLineaCodigo.forEach(num => {
 				index++;
 				num.innerHTML = index;
@@ -34,13 +32,14 @@ function Main() {
 	Guias = document.getElementById('guias');
 	MainPrincipal = document.getElementById('main');
 
-	if(MainPrincipal.classList.contains('guia-html'))
+	if(MainPrincipal.classList.contains(`guia-html`))
 	{
 		CargarElemento(Noticias, `${host}/hm/items-html.html`);
 		
 	}
 
 	CargarElemento(Cabecera, HeaderURL);
+	NumerarLineas();
 }
 
 window.addEventListener('load', Main, false);
