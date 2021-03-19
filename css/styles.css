@@ -278,6 +278,12 @@ figure#tim figcaption{
 	background: rgb(35, 197, 143);
 }
 
+.estructura .dochtml{
+	padding: 5px;
+	border: 2px dashed rgb(24, 90, 51);
+	background: rgb(47, 141, 86);;
+}
+
 .estructura .cabeza{
 	border: 2px dashed rgb(27, 60, 145);
 	background: rgb(35, 186, 197);
@@ -291,6 +297,7 @@ figure#tim figcaption{
 }
 
 /* NOTE ------------------------ Codigo de ejemplos --------------------------- */
+
 
 .codeEjemplo{
 	width: 90%;
