@@ -267,18 +267,25 @@ figure#tim figcaption{
 .estructura>div{
 	text-align: center;
 	padding: 5px;
-	color: white;
+	margin: 5px;
+	border-radius: 10px;
+}
+.estructura .dochtml>div{
+	text-align: center;
+	padding: 5px;
 	margin: 5px;
 	border-radius: 10px;
 }
 
 .estructura .tipo{
+	color: white;
 	margin-top: 1.5em;
 	border: 2px dashed rgb(27, 145, 106);
 	background: rgb(35, 197, 143);
 }
 
 .estructura .dochtml{
+	color: white;
 	margin: 2px;
 	padding: 5px;
 	border: 2px dashed rgb(24, 90, 35);
@@ -286,12 +293,15 @@ figure#tim figcaption{
 }
 
 .estructura .dochtml .cabeza{
+	color: white;
 	border: 2px dashed rgb(27, 60, 145);
 	background: rgb(35, 51, 197);
 	height: 2em;
 }
 
 .estructura .dochtml .cuerpo{
+	margin-top: 5px;
+	color: white;
 	border: 2px dashed rgb(145, 27, 27);
 	background: rgb(197, 35, 35);
 	height: 4em;
