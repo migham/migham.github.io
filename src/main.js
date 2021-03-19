@@ -4,6 +4,8 @@ let Noticias, NoticiasURL = `${host}/hm/noticias.html`;
 let Guias,    GuiasURL    = `${host}/hm/guias.html`;
 let MainPrincipal;
 
+let Footer, FooterURL = `${host}/hm/footer.html`
+
 let bloqueCodigo = [];
 let numLineaCodigo = [];
 
@@ -31,6 +33,7 @@ function Main() {
 	Noticias = document.getElementById('noticias');
 	Guias = document.getElementById('guias');
 	MainPrincipal = document.getElementById('main');
+	Footer = document.getElementById('pie');
 
 	if(MainPrincipal.classList.contains(`guia-html`))
 	{
@@ -39,11 +42,12 @@ function Main() {
 	}
 
 	CargarElemento(Cabecera, HeaderURL);
+	
+	CargarElemento(Footer, FooterURL);
 	NumerarLineas();
 }
 
 window.addEventListener('load', Main, false);
-
 
 
 /**
