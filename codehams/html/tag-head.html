@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Codehams - HTML</title>
+
+	<link 
+		rel="stylesheet" 
+		href="/css/norm-min.css">
+	<link 
+		rel="preconnect" 
+		href="https://fonts.gstatic.com">
+	<link 
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap" 
+		rel="stylesheet"> 
+	<link 
+		rel="stylesheet" 
+		href="/css/styles.css">
+
+		<base href="https://migham.github.io/codehams/html/global-attr.html" target="_blank">
+</head>
+
+<body id= "cuerpo">
+	<header class="cabecera" id="cabecera"></header>
+	<aside class="noticias" id="noticias"></aside>
+	<aside class="guias" id="guias"><ul id="itemsGuia"></ul></aside>	
+
+	<main class="guia-html" id="main">
+	<div class="ocultaScroll">
+	<div class="Viewport">
+	<article class='articulo'>
+		<h1 id="hArt">Elemento <span id="tag">&lt;head&gt;</span></h1>
+		<h2 class="titulos" id="head">¿Qué contiene la cabecera?</h2>
+		<p>Pues la mía nada.. =( </p>
+		<p>
+			Pero el elemento <span id="tag">&lt;head&gt;</span> contiene toda la metadata sobre el documento HTML en cuestión y es la parte que no se mostrará. Es donde se añade el título de la página, estilos y enlaces por ejemplo para personalizar el favicon o scripts...</p>
+		<p>
+			Por ejemplo:
+		</p>
+		<div class="codeEjemplo">
+			<div class="numLinea"></div>
+			<div class="lineaCodigo"><span id="tag">&lt;!Doctype </span> <span id="atributo">html</span>&gt;</span></div>
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id='tag'>&lt;html</span> lang=<span id="atributo">"es"</span>&gt;</span></div>
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id='tag'>&lt;head&gt;</span></div>
+			 
+			<div class='numLinea'></div>
+			<div class='lineaCodigo ident_1'><span id="tag">&lt;title&gt;</span>Titulo<span id="tag">&lt;/title&gt;</span></div>
+			 
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id='tag'>&lt;/head&gt;</span></div>
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id='tag'>&lt;body&gt;</span></div>
+			 
+			<div class='numLinea'></div>
+			<div class='lineaCodigo ident_1'><span id='coment'>&lt;!-- Contenido de la web --&gt;</span></div>
+			 
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id='tag'>&lt;/body&gt;</span></div>
+			 
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id='tag'>&lt;/html&gt;</span></div>
+		</div>
+		<p>
+			Otro ejemplo sería añadiendo el set de caracteres para UTF-8:
+		</p>
+		<div class="codeEjemplo">
+			<div class="numLinea"></div>
+			<div class="lineaCodigo"><span id="tag">&lt;!Doctype </span> <span id="atributo">html</span>&gt;</span></div>
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id='tag'>&lt;html</span> lang=<span id="atributo">"es"</span>&gt;</span></div>
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id='tag'>&lt;head&gt;</span></div>
+			<div class='numLinea'></div>
+			<div class='lineaCodigo ident_1'><span id="tag">&lt;meta</span> charset=<span id="atributo">"utf-8"</span><span id="tag"></span> /&gt;</span></div>
+			 
+			<div class='numLinea'></div>
+			<div class='lineaCodigo ident_1'><span id="tag">&lt;title&gt;</span>Titulo<span id="tag">&lt;/title&gt;</span></div>
+			 
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id='tag'>&lt;/head&gt;</span></div>
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id='tag'>&lt;body&gt;</span></div>
+			 
+			<div class='numLinea'></div>
+			<div class='lineaCodigo ident_1'><span id='coment'>&lt;!-- Contenido de la web --&gt;</span></div>
+			 
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id='tag'>&lt;/body&gt;</span></div>
+			 
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id='tag'>&lt;/html&gt;</span></div>
+		</div>
+		<p>
+			Notese que el elemento <span id="tag">&lt;meta /&gt;</span> no poseé una etiqueta de cierre, sino que en el mismo elemento se incluye el cierre con el slash ó barra inclinada.
+		</p>
+		<p>
+			Otro ejemplo añadiendo estilos:
+		</p>
+		<div class="codeEjemplo">
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id="tag">&lt;!Doctype</span> html&gt;</span></div>
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id='tag'>&lt;html</span> lang=<span id='atributo'>"es"</span><span id='tag'></span>&gt;</span></div>
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id='tag'>&lt;head&gt;</span></div>
+			 
+			<div class='numLinea'></div>
+			<div class='lineaCodigo ident_1'><span id="tag">&lt;meta </span>charset=<span id="atributo">"utf-8"</span>/&gt;</span></div>
+			<div class='numLinea'></div>
+			<div class='lineaCodigo ident_1'><span id="tag">&lt;title&gt;</span>Titulo<span id="tag">&lt;/title&gt;</span></div>
+			<div class='numLinea'></div>
+			<div class='lineaCodigo ident_1'><span id='tag'>&lt;style&gt;</span></div>
+			 
+			<div class='numLinea'></div>
+			<div class='lineaCodigo ident_2'><span id="css_tag">h1</span>{ <span id="css_valor">color:</span> red;}</div>
+			<div class='numLinea'></div>
+			<div class='lineaCodigo ident_2'><span id="css_tag">p</span>{ <span id="css_valor">color:</span> blue;}</div>
+						 
+			<div class='numLinea'></div>
+			<div class='lineaCodigo ident_1'><span id='tag'>&lt;/style&gt;</span></div>
+			 
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id='tag'>&lt;/head&gt;</span></div>
+			<div class='numLinea'></div>
+			<div class='lineaCodigo'><span id='tag'>&lt;/html&gt;</span></div>
+		</div>
+		<p>El resultado sería:</p>
+		<figure>
+			<img src="https://migham.github.io/img/img_ejem_001.png" width="400px" alt="Ejemplo de estilos" srcset="">
+		</figure>
+		<h2 class="titulos" id="atributos">Atributos</h2>
+		<p>El elemento <span id="tag">&lt;head&gt;</span> admite todos los <a href="">atributos globales</a></p>
+		<ul>
+			<li><a href="https://migham.github.io/codehams/html/tag-title.html"><span id="tag">&lt;title&gt;</span></a></li>
+			<li><a href="https://migham.github.io/codehams/html/tag-style.html"><span id="tag">&lt;style&gt;</span></a></li>
+			<li><a href="https://migham.github.io/codehams/html/tag-base.html"><span id="tag">&lt;base&gt;</span></a></li>
+			<li><a href="https://migham.github.io/codehams/html/tag-link.html"><span id="tag">&lt;link&gt;</span></a></li>
+			<li><a href="https://migham.github.io/codehams/html/tag-meta.html"><span id="tag">&lt;meta&gt;</span></a></li>
+			<li><a href="https://migham.github.io/codehams/html/tag-script.html"><span id="tag">&lt;script&gt;</span></a></li>
+			<li><a href="https://migham.github.io/codehams/html/tag-noscript.html"><span id="tag">&lt;noscript&gt;</span></a></li>
+		</ul>
+		
+		<footer id = "pieArt"></footer>
+	</article>
+	</div>
+	</div>
+	</main>
+
+	<footer class="pie" id="pie"><p>Migham</p></footer>
+
+	<script src="https://migham.github.io/src/main.js"></script>
+</body>
+</html>
