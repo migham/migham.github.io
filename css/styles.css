@@ -202,6 +202,9 @@ span#tag{
 span#atributo{
 	color:tomato;
 }
+span#coment{
+	color: green;
+}
 
 h2.titulos{
 	border-bottom: 2px solid var(--colorBorder);
