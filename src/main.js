@@ -35,11 +35,8 @@ function Main() {
 	MainPrincipal = document.getElementById('main');
 	Footer = document.getElementById('pie');
 
-	if(MainPrincipal.classList.contains(`guia-html`))
-	{
-		CargarElemento(Noticias, `${host}/hm/items-html.html`);
-		
-	}
+	if(MainPrincipal.classList.contains('inicio')) 			CargarElemento(Noticias, NoticiasURL)
+	else if(MainPrincipal.classList.contains(`guia-html`))	CargarElemento(Noticias, `${host}/hm/items-html.html`);	
 
 	CargarElemento(Cabecera, HeaderURL);
 	
