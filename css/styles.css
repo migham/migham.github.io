@@ -321,7 +321,7 @@ figure#tim figcaption{
 	padding: 10px;
 	background-color: #fafafa;
 	border: 2px dashed grey;
-	font-size: 1em;
+	font-size: 0.8em;
 	display: grid;
 	grid-template-columns: 30px 1fr;
 }
@@ -333,6 +333,17 @@ figure#tim figcaption{
 .codeEjemplo .lineaCodigo{
 	padding-left: 10px;
 }
+.codeEjemplo .lineaCodigo:hover{
+	border: 1px dashed grey;
+	border-radius: 5px;
+}
+
 .codeEjemplo .lineaCodigo.ident_1{
+	padding-left: 25px;
+}
+.codeEjemplo .lineaCodigo.ident_2{
+	padding-left: 50px;
+}
+.codeEjemplo .lineaCodigo.ident_3{
 	padding-left: 25px;
 }
