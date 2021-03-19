@@ -265,6 +265,7 @@ figure#tim figcaption{
 	padding: 10px 5px;
 	text-align: center;
 	border-radius: 5px;
+	
 }
 
 .estructura>div{
@@ -321,6 +322,7 @@ figure#tim figcaption{
 	padding: 10px;
 	background-color: #fafafa;
 	border: 2px dashed grey;
+	font-family: 'Ubuntu Mono';
 	font-size: 0.8em;
 	display: grid;
 	grid-template-columns: 30px 1fr;
