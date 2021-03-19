@@ -30,12 +30,41 @@
 			<article class='articulo'>
 				<h1 id="hArt">Elemento HTML</h1>
 				<h2 class="titulos" id="html">HTML</h2>
-				<p></p>
+				<p>
+					El elemento HTML define el contexto principal y representa la raiz de todo documento HTML. Este elemento puede albergar en su interior todos los demás elementos HTML excepto la declaración <span id="tag">&lt;!Doctype&gt;</span></p>
+				<p>Siempre debería de ir acompañado del atributo <span id="atributo">lang</span> para especificar en qué idioma se esta desplegando la página</p>
+				<div class="codeEjemplo">
+					<div class="numLinea"></div>
+					<div class="lineaCodigo"><span id="tag">&lt;html</span> lang=<span id="atributo">"es"</span><span id="tag">&gt;</span></div>
+				</div>
+				<p>Otro atributo que se le puede añadir es <span id="atributo">xmls</span> con el valor "http://www.w3.org/1999/xhtml" en el caso de que se necesite representar elementos XHTML</p>
+				<p>En tal caso, también debería ser necesario indicar el idioma de los elementos XML con el atributo <span id="atributo">xml:lang</span></p>
+				<div class="codeEjemplo">
+					<div class="numLinea"></div>
+					<div class="lineaCodigo"><span id="tag">&lt;html</span> lang=<span id="atributo">"es"</span> xml:lang=<span id="atributo">"es"</span> xmls<span id="atributo">"http://www.w3.org/1999/xhtml"</span>&gt;</span></div>
+				</div>
+				<p>
+					El elemento <span id="tag">&lt;html&gt;</span> soporta todos los <a href="https://migham.github.io/codehams/html/global-attr.html">atributos globales</a> del estandar HTML5</p>
+				
+				
+				<h3>¿Cómo hago para colocar contenido en otro idioma al declarado?</h3>
+				
+				<p>Bueno.. en este caso se podría usar el <span id="atributo">lang</span> en el lugar donde se necesita usar otro idioma con el elemento <span id="tag">&lt;span&gt;</span> para especificar el lenguaje</p>
+
+				<div class="codeEjemplo">
+					<div class="numLinea"></div>
+					<div class="lineaCodigo"><span id="tag">&lt;p&gt;</span>"Tengo un gato de color azul" en Japonés: 	<span id="tag">&lt;span</span> lang=<span id="atributo">"ja"</span><span id="tag">&gt;</span>私は青い猫を飼っています<span id="tag">&lt;/span&gt;</span><span id="tag">&lt;/p&gt;</span></div>
+				</div>
+
+				<p>Esto daría como resultado: <br>"Tengo un gato de color azul" en Japonés: <span lang="ja" title="tengo un gato de color azul en japonés">私は青い猫を飼っています</span></p>
+
+				<p>En <strong><a href="https://www.w3schools.com/tags/ref_language_codes.asp" target="_blank">este sitio</a></strong> hay una lista completa de los valores para el atributo <span id="atributo">lang</span></p>
 
 				<hr class="fuentes">
 				<p>Fuentes:</p>
 				<ul>
-					<li></li>
+					<li><a href="https://www.w3.org/International/questions/qa-html-language-declarations.es#:~:text=El%20atributo%20xml%3Alang%20realmente,ser%20reconocido%20por%20los%20navegadores." target="_blank">W3</a></li>
+					<li><a href="https://www.w3schools.com/tags/tag_html.asp" target="_blank">W3Schools</a></li>
 				</ul>
 				<footer id = "pieArt"></footer>
 			</article>
