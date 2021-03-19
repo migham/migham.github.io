@@ -331,19 +331,21 @@ figure#tim figcaption{
 	padding-left: 5px;
 }
 .codeEjemplo .lineaCodigo{
+	border: 1px solid transparent;
 	padding-left: 10px;
 }
 .codeEjemplo .lineaCodigo:hover{
 	border: 1px dashed grey;
 	border-radius: 5px;
+	background-color: rgb(165, 165, 165);
 }
 
 .codeEjemplo .lineaCodigo.ident_1{
 	padding-left: 25px;
 }
 .codeEjemplo .lineaCodigo.ident_2{
-	padding-left: 50px;
+	padding-left: 60px;
 }
 .codeEjemplo .lineaCodigo.ident_3{
-	padding-left: 25px;
+	padding-left: 85px;
 }
