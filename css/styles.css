@@ -199,25 +199,19 @@ span#tag{
 	color: var(--colorBorder);
 	font-size: 1em;
 }
-span#atributo{
-	color:tomato;
-}
-span#coment{
-	color: green;
-}
+span#atributo{color:tomato;}
+span#coment{color: green;}
+span#css_tag{ color:rgb(116, 34, 34);}
+span#css_valor{color: rgb(255, 58, 58);}
 
 h2.titulos{
 	border-bottom: 2px solid var(--colorBorder);
 	padding-bottom: 5px;
 }
 
-a{
-	color: tomato;
-}
+a{color: tomato;}
 
-hr.fuentes{
-	margin-top: 5em;
-}
+hr.fuentes{margin-top: 5em;}
 
 footer#pieArt ul{
 	list-style: none;
