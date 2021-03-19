@@ -25,7 +25,7 @@ const NumerarLineas = () => {
 				num.innerHTML = index;
 			});
 		});
-	}, 1000);
+	}, 500);
 };
 
 function Main() {
