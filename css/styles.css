@@ -279,18 +279,19 @@ figure#tim figcaption{
 }
 
 .estructura .dochtml{
+	margin: 2px;
 	padding: 5px;
 	border: 2px dashed rgb(24, 90, 35);
 	background: rgb(53, 167, 62);;
 }
 
-.estructura .cabeza{
+.estructura .dochtml .cabeza{
 	border: 2px dashed rgb(27, 60, 145);
 	background: rgb(35, 51, 197);
 	height: 2em;
 }
 
-.estructura .cuerpo{
+.estructura .dochtml .cuerpo{
 	border: 2px dashed rgb(145, 27, 27);
 	background: rgb(197, 35, 35);
 	height: 4em;
