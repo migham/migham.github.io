@@ -9,6 +9,7 @@ let Footer, FooterURL = `${host}/hm/footer.html`
 let bloqueCodigo = [];
 let numLineaCodigo = [];
 
+//#region [rgba(120, 52, 12, 0.3)] NOTE Numero de lineas
 const NumerarLineas = () => {
 	setTimeout(() => {
 		/**NOTE Bloques de codigo
@@ -28,6 +29,21 @@ const NumerarLineas = () => {
 	}, 500);
 };
 
+//#endregion
+
+//#region [rgba(12, 145, 21, 0.3)] NOTE Creacion del elemento GUIA
+const CargaGuia = async () => {
+	Guias.innerHTML = "";
+	setTimeout(() => {
+		let titulos = document.querySelectorAll('.titulos');
+		titulos.forEach((items) => {
+			Guias.innerHTML = `<li><a href="#${items.id}">${items.textContent}</a></li>`;
+		});
+	});
+};
+//#endregion
+
+//#region [rgba(10, 57, 250, 0.2)] NOTE Funcion Main
 function Main() {
 	Cabecera = document.getElementById('cabecera');
 	Noticias = document.getElementById('noticias');
@@ -43,10 +59,11 @@ function Main() {
 	CargarElemento(Footer, FooterURL);
 	NumerarLineas();
 }
+//#endregion
 
 window.addEventListener('load', Main, false);
 
-
+//#region [rgba(120, 90, 12, 0.2)] NOTE Obtener contenido de las secciones
 /**
  * Funcion que permite agregar elementos al documento
  * en base al elemento seleccionado y la url de dicho contenido
@@ -65,3 +82,4 @@ async function CargarElemento(elemento, url = '') {
 	};
 	XHR.send();
 }
+//#endregion
